@@ -1,0 +1,22 @@
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    .logo{
+        display: flex;
+        width: 100%;
+
+        img{
+            margin: 10px auto;
+        }
+    }
+
+    .footer__legal{
+        text-align: center;
+ 
+    }
+}
+

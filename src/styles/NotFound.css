@@ -1,0 +1,39 @@
+body{
+    font-family: Montserrat, sans-serif;
+}
+
+main{
+    margin: 0;
+}
+
+.nf__404{
+
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 410.69px;
+    text-align: center;
+    color: #FF6060;
+    margin: 0;
+    
+}
+
+.nf__text{
+    color: #FF6060;
+    font-size: 36px;
+    font-weight: 500;
+    padding: 50px;
+    text-align: center;
+
+}
+
+.nf__link{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    text-decoration: underline;
+    margin-bottom: 80px;
+
+}

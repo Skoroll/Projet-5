@@ -1,0 +1,38 @@
+.kaza__list {
+    padding: 20px;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    list-style: none;
+}
+
+.list__card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    /* Ajout pour centrer horizontalement */
+    margin: 0 auto;
+}
+
+.list__card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.list__card h3 {
+    position: absolute;
+    width: calc(100% - 20px); /* Utilisation de calc pour prendre en compte le padding */
+    margin-top: 10px;
+    font-size: 1.2rem;
+    bottom: 0;
+    left: 10px;
+    color: white;
+    text-align: left;
+}
