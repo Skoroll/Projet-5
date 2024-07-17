@@ -4,11 +4,15 @@ footer{
     display: flex;
     flex-direction: column;
     margin: auto;
+    max-height: 250px;
 
-    .logo{
-        display: flex;
-        width: 100%;
 
+padding: 66px 120px 58px 120px;
+
+
+
+
+        
         img{
             margin: 10px auto;
         }
@@ -18,5 +22,5 @@ footer{
         text-align: center;
  
     }
-}
+
 

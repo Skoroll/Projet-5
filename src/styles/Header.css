@@ -3,14 +3,24 @@ header {
    height: 75px;
    width: 100%;
    align-items: center;
-   
-   img{
-    margin: 10px 0 0 10px;
+   position: fixed;
+   background : white;
+   top: 0;
+   z-index: 999;
+   .header__logo{
+    margin: 0 0 0 10px;
+    width: 20vw;
+    max-width: 210px;
+    min-width: 120px;
+    height: auto;
    }
 
    nav {
      margin-right: 10px;
      margin-left: auto;
+     display: flex;
+     justify-content: flex-end;
+     width: 80%;
  
      ul {
        display: flex;

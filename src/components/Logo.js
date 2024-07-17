@@ -1,4 +1,3 @@
-import '../styles/Logo.css'
 import logoRed from '../assets/logo_red.svg'
 import logoWhite from '../assets/logo_white.svg'
 
@@ -8,9 +7,9 @@ function Logo({ variant }) {
     let altText = variant === "red" ? "Logo Red" : "Logo White";
 
     return (
-        <div className="logo">
-            <img src={logoSrc} alt={altText} />
-        </div>
+     
+            <img className="header__logo" src={logoSrc} alt={altText} />
+
     );
 }
 

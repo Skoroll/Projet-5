@@ -1,12 +1,6 @@
-body{
-    font-family: Montserrat, sans-serif;
-}
 
-main{
-    margin: 0;
-}
 
-.nf__404{
+.not-found__404{
 
     font-size: 288px;
     font-weight: 700;
@@ -17,7 +11,7 @@ main{
     
 }
 
-.nf__text{
+.not-found__text{
     color: #FF6060;
     font-size: 36px;
     font-weight: 500;
@@ -26,7 +20,7 @@ main{
 
 }
 
-.nf__link{
+.not-found__link{
     display: inline-block;
     text-align: center;
     width: 100%;
