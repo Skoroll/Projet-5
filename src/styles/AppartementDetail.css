@@ -1,6 +1,6 @@
 .tags{
     display: flex;
-    gap: 10px;
+    gap: 5px;
 
     span{
         background: #FF6060;
@@ -8,6 +8,10 @@
         padding: 5px 10px;
         border-radius: 10px;
     }
+}
+
+.block-info{
+  margin: 20px 0;
 }
 
 h1{
@@ -67,3 +71,5 @@ h1{
   .rating {
     margin: 0;
   }
+
+  

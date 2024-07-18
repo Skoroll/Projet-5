@@ -11,7 +11,7 @@ function Banner({ version }) {
     <div className='banner'>
       <img src={imageUrl} alt='Banner' className='banner__image' />
       <div className='banner__overlay'></div>
-      {showText && <p className='banner__text'>Chez vous, partout et ailleurs</p>}
+      {showText && <h1 className='banner__text'>Chez vous, partout et ailleurs</h1>}
     </div>
   );
 }

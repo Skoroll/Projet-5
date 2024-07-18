@@ -7,7 +7,9 @@ function AppartementCard({ appartement }) {
         <li className="list__card">
             <Link to={`/appartement/${appartement.id}`}>
                 <img src={appartement.cover} alt={appartement.title} />
-                <h3>{appartement.title}</h3>
+                <div className='appartement-background'>
+                    <h2>{appartement.title}</h2>
+                </div>
             </Link>
         </li>
     );
