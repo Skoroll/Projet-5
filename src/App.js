@@ -5,7 +5,7 @@ import About from './pages/About';
 import AppartementDetail from './pages/AppartementDetail';
 import NotFound from './pages/NotFound';
 import Footer from './components/Footer';
-import './styles/App.css';
+import './styles/App.scss';
 
 function App() {
     return (

@@ -1,0 +1,76 @@
+.collapsible-section {
+  margin-bottom: 20px;
+  padding: 15px;
+
+  .section-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    background: #FF6060;
+    padding: 10px;
+    border-radius: 5px;
+
+    h2 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    i {
+      font-size: 1.5rem;
+      transition: transform 0.3s ease;
+      margin-right: 15px;
+    }
+  }
+
+  .content {
+    display: none;
+    padding: 25px;
+    font-size: 1rem;
+    background: #F6F6F673;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &.open {
+    .content {
+      display: block;
+
+      ul {
+        list-style: none; // Redondance ici, peut être enlevée car déjà définie dans .content
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .section-heading i {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.appartement-detail__info {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+
+  .collapsible-section {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 735px) {
+    flex-direction: column;
+    gap: 0;
+    justify-content: left;
+    .collapsible-section {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+}

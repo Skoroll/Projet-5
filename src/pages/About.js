@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/About.css';
+import '../styles/About.scss';
 import Banner from '../components/Banner';
 import CollapsibleSection from '../components/CollapsibleSection';
 

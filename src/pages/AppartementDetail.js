@@ -1,10 +1,10 @@
-// src/pages/AppartementDetail.jsx
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import appartementsData from "../datas/appartements.json";
 import Carrousel from "../components/Carrousel";
 import CollapsibleSection from "../components/CollapsibleSection";
-import "../styles/AppartementDetail.css";
+import Tooltip from "../components/Tooltip"; 
+import "../styles/AppartementDetail.scss";
 
 function AppartementDetail() {
   const { id } = useParams();
@@ -32,9 +32,9 @@ function AppartementDetail() {
           <p className="localisation">{appartement.location}</p>
           <div className="tags">
             {appartement.tags.map((tag, index) => (
-              <span key={index} className="tag">
-                {tag}
-              </span>
+              <Tooltip key={index} text={tag}>
+                <p className="tag">{tag}</p>
+              </Tooltip>
             ))}
           </div>
         </div>

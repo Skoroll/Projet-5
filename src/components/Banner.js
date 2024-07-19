@@ -1,7 +1,7 @@
 import React from 'react';
 import cliffBanner from '../assets/cliff-banner.png';
 import mountainBanner from '../assets/mountain-banner.png';
-import '../styles/Banner.css';
+import '../styles/Banner.scss';
 
 function Banner({ version }) {
   const imageUrl = version === 'cliff' 
