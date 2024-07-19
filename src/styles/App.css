@@ -15,12 +15,21 @@ body{
 
 main{
     margin: 0;
-    padding: 15px;
-    margin-top: 65px;
+    padding: 20px;
+    margin: 55px;
 }
 
 .main-container{
     display: flex;
     flex-direction: column;
     height: 100vh;
+}
+
+
+@media (max-width: 768px) {
+    main{
+
+        padding: 0px;
+        margin: 90px 15px 0 15px;
+    }
 }

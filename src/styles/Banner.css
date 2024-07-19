@@ -1,8 +1,9 @@
 .banner {
   position: relative;
   margin: 20px auto;
-  height: 120px;
+  height: 250px;
   width: 100%;
+  min-width: 300px;
   border-radius: 15px;
 }
 
@@ -38,8 +39,19 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
-  font-size: 25px;
+  font-size: 45px;
   font-weight: 700;
   color: white;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 150px;
+  }
+
+  .banner__text {
+    text-align: center;
+    font-size: 25px;
+  }
 }

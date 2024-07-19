@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
 function AppartementCard({ appartement }) {
     return (
         <li className="list__card">

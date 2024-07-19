@@ -7,9 +7,7 @@ function Logo({ variant }) {
     let altText = variant === "red" ? "Logo Red" : "Logo White";
 
     return (
-     
             <img className="header__logo" src={logoSrc} alt={altText} />
-
     );
 }
 

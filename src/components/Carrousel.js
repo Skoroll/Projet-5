@@ -18,6 +18,9 @@ function Carrousel({ pictures }) {
         <div className="carrousel">
             <i className="fa-solid fa-chevron-left left-arrow" onClick={prevSlide}></i>
             <i className="fa-solid fa-chevron-right right-arrow" onClick={nextSlide}></i>
+            <div className='count'>
+            <p><span>{current + 1}</span>/<span>{length}</span></p> 
+            </div>
             {pictures.map((picture, index) => (
                 <div className={index === current ? 'slide active' : 'slide'} key={index}>
                     {index === current && <img src={picture} alt={`slide ${index}`} className="carrousel__image" />}
