@@ -1,8 +1,12 @@
 import React from 'react';
 import '../styles/NotFound.scss'
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function NotFound() {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  }, []);
   return (
         <main>
           <p className='not-found__404'>404</p>

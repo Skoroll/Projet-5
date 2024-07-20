@@ -3,8 +3,12 @@ import '../styles/Home.scss';
 import Banner from '../components/Banner';
 import appartementsData from '../datas/appartements.json';
 import AppartementCard from '../components/AppartementCard';
-
+import { useEffect } from 'react';
 function Home() {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  }, []);
+
   return (
     <main>
       <Banner version='cliff' />

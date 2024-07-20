@@ -2,6 +2,8 @@ import React from 'react';
 import '../styles/About.scss';
 import Banner from '../components/Banner';
 import CollapsibleSection from '../components/CollapsibleSection';
+import { useEffect } from 'react';
+
 
 const articles = [
   {
@@ -23,6 +25,9 @@ const articles = [
 ];
 
 function About() {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  }, []);
   return (
     <main>
       <Banner version='mountain' />

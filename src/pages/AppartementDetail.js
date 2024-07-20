@@ -5,8 +5,10 @@ import Carrousel from "../components/Carrousel";
 import CollapsibleSection from "../components/CollapsibleSection";
 import Tooltip from "../components/Tooltip"; 
 import "../styles/AppartementDetail.scss";
-
 function AppartementDetail() {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  }, []);
   const { id } = useParams();
   const navigate = useNavigate();
   const appartement = appartementsData.appartements.find((a) => a.id === id);
