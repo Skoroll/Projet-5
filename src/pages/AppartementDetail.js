@@ -1,23 +1,28 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import appartementsData from "../datas/appartements.json";
 import Carrousel from "../components/Carrousel";
 import CollapsibleSection from "../components/CollapsibleSection";
-import Tooltip from "../components/Tooltip"; 
 import "../styles/AppartementDetail.scss";
+
 function AppartementDetail() {
-  useEffect(()=>{
-    window.scrollTo(0,0);
-  }, []);
   const { id } = useParams();
   const navigate = useNavigate();
-  const appartement = appartementsData.appartements.find((a) => a.id === id);
+  const [appartement, setAppartement] = useState(null);
 
   useEffect(() => {
-    if (!appartement) {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    // Trouver l'appartement correspondant à l'id
+    const foundAppartement = appartementsData.appartements.find((a) => a.id === id);
+    setAppartement(foundAppartement);
+
+    if (!foundAppartement) {
       navigate("/notfound");
     }
-  }, [appartement, navigate]);
+  }, [id, navigate]);
 
   if (!appartement) {
     return null;
@@ -34,14 +39,19 @@ function AppartementDetail() {
           <p className="localisation">{appartement.location}</p>
           <div className="tags">
             {appartement.tags.map((tag, index) => (
-              <Tooltip key={index} text={tag}>
-                <p className="tag">{tag}</p>
-              </Tooltip>
+              <p className="tag" key={index}>{tag}</p>
             ))}
           </div>
         </div>
         <div className="host-and-rating">
-          <p className="rating">{"⭐".repeat(appartement.rating)}</p>
+          <div className="rating">
+            {[...Array(5)].map((_, i) => (
+              <i
+                key={i}
+                className={`fa-solid fa-star star ${i < appartement.rating ? 'filled' : ''}`}
+              ></i>
+            ))}
+          </div>
           <div className="host">
             <p>{appartement.host.name}</p>
             <img className="host-picture" src={appartement.host.picture} alt={appartement.host.name} />

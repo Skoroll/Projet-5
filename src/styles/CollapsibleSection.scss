@@ -1,6 +1,5 @@
 .collapsible-section {
-  margin-bottom: 20px;
-  padding: 15px;
+  margin: 0 0 20px 0;
 
   .section-heading {
     display: flex;
@@ -15,7 +14,7 @@
 
     h2 {
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
 
     i {
@@ -26,10 +25,12 @@
   }
 
   .content {
-    display: none;
-    padding: 25px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 25px;
     font-size: 1rem;
     background: #F6F6F673;
+    transition: max-height 0.3s ease, padding 0.3s ease;
 
     ul {
       list-style: none;
@@ -40,10 +41,11 @@
 
   &.open {
     .content {
-      display: block;
+      max-height: 1000px; /* set a large value that exceeds the maximum height of the content */
+      padding: 25px;
 
       ul {
-        list-style: none; // Redondance ici, peut être enlevée car déjà définie dans .content
+        list-style: none;
         padding: 0;
         margin: 0;
       }

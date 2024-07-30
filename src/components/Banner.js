@@ -1,6 +1,6 @@
 import React from 'react';
-import cliffBanner from '../assets/cliff-banner.png';
-import mountainBanner from '../assets/mountain-banner.png';
+import cliffBanner from '../assets/cliff-banner.webp';
+import mountainBanner from '../assets/mountain-banner.webp';
 import '../styles/Banner.scss';
 
 function Banner({ version }) {

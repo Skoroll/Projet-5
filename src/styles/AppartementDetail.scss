@@ -1,5 +1,6 @@
 .tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 5px;
   align-items: center;
   width: 100%;
@@ -13,7 +14,8 @@
     white-space: nowrap;
     overflow: hidden; 
     cursor: default;
-  }
+    font-weight: 700;
+    }
 }
 
 .block-info {
@@ -32,6 +34,7 @@
 h1 {
   color: #FF6060;
   margin: 0;
+  font-weight: 500;
 }
 
 .category-heading {
@@ -72,7 +75,7 @@ h1 {
 }
 
 .localisation {
-  font-weight: 700;
+  font-weight: 500;
   margin: 5px 0 15px 0;
 }
 
@@ -84,7 +87,7 @@ h1 {
     flex-direction: column-reverse;
     align-items: flex-end;
     width: 50%;
-    margin: auto;
+    margin: auto 0 auto auto;
     padding: 10px;
   }
 
@@ -95,5 +98,14 @@ h1 {
 }
 
 .rating {
+  display: flex;
   margin: 0;
+
+  .star {
+    color: lightgray; /* Default color for stars */
+  }
+
+  .star.filled {
+    color: red; /* Color for filled stars */
+  }
 }

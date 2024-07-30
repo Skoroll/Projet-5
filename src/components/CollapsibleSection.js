@@ -12,7 +12,7 @@ function CollapsibleSection({ title, content, children }) {
         <div className={`collapsible-section ${isOpen ? 'open' : ''}`}>
             <div className='section-heading' onClick={toggleCollapse}>
                 <h2>{title}</h2>
-                <i className="fa-solid fa-chevron-up"></i>
+                <i className="fa-solid fa-chevron-down"></i>
             </div>
             <div className={`content ${isOpen ? 'show' : ''}`}>
                 {content || children}
