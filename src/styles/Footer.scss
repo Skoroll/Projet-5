@@ -1,14 +1,16 @@
+@import 'variables';
+@import 'mixins';
+
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #333; // Utilisez la couleur de fond souhaitée
-  
-    .footer__legal {
-      color: #fff; // Couleur du texte
-      font-size: 14px;
-      margin-top: 10px;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+
+  .footer__legal {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
   }
-  
+}

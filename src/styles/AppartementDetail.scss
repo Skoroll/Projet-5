@@ -1,3 +1,6 @@
+@import 'variables';
+@import 'mixins';
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -7,15 +10,15 @@
 
   p {
     background: #FF6060;
-    color: white;
+    color: $text-color;
     padding: 5px 10px;
     border-radius: 10px;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden; 
+    overflow: hidden;
     cursor: default;
     font-weight: 700;
-    }
+  }
 }
 
 .block-info {
@@ -41,7 +44,7 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  color: white;
+  color: $text-color;
   background: #FF6060;
   padding: 5px;
   border-radius: 5px;
@@ -49,7 +52,6 @@ h1 {
   h2 {
     margin: 0;
   }
-
 }
 
 .host {

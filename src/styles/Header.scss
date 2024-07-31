@@ -1,54 +1,53 @@
-header {
-   display: flex;
-   height: 75px;
-   width: 100%;
-   align-items: center;
-   position: fixed;
-   background : white;
-   top: 0;
-   z-index: 999;
-   padding: 10px 0;
+@import 'variables';
+@import 'mixins';
 
-   .header__logo{
+header {
+  display: flex;
+  height: 75px;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  background: white;
+  top: 0;
+  z-index: 999;
+  padding: 10px 0;
+
+  .header__logo {
     margin: 0 0 0 15px;
     width: 20vw;
     height: auto;
     max-width: 210px;
     min-width: 120px;
-    height: auto;
-   }
+  }
 
-   nav {
-     margin-right: 5%;
-     margin-left: auto;
-     display: flex;
-     justify-content: flex-end;
+  nav {
+    margin-right: 5%;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
 
- 
-     ul {
-       display: flex;
-       list-style: none;
-       gap: 20px;
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
 
-       li a{
-         font-weight: 600;
-         color: black;
-         text-decoration: none;
-       }
-       li a:hover {
-      
+      li a {
+        font-weight: 600;
+        color: black;
+        text-decoration: none;
+      }
+
+      li a:hover {
         text-decoration: underline;
       }
-     }
+    }
+  }
+}
 
+nav li:hover {
+  cursor: pointer;
+}
 
-   }
- }
- 
- nav li:hover {
-   cursor: pointer;
- }
-
- .active {
+.active {
   text-decoration: underline;
 }

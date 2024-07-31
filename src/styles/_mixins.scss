@@ -1,0 +1,18 @@
+
+@function calculate-rem($size) {
+    @return $size / 16 * 1rem;
+  }
+  
+
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin responsive-width($max-width: 768px) {
+    @media screen and (max-width: $max-width) {
+      width: 100%;
+    }
+  }
+  

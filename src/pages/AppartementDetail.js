@@ -11,19 +11,30 @@ function AppartementDetail() {
   const [appartement, setAppartement] = useState(null);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  useEffect(() => {
     // Trouver l'appartement correspondant à l'id
-    const foundAppartement = appartementsData.appartements.find((a) => a.id === id);
-    setAppartement(foundAppartement);
-
-    if (!foundAppartement) {
+    const foundAppartement = appartementsData.appartements.find(
+      (a) => a.id === id
+    );
+    if (foundAppartement) {
+      setAppartement(foundAppartement);
+    } else {
       navigate("/notfound");
     }
   }, [id, navigate]);
 
+  useEffect(() => {
+    // Mettre à jour le titre de la page lorsque l'appartement est chargé
+    if (appartement) {
+      document.title = `${appartement.title} - Kasa`;
+    }
+  }, [appartement]);
+
+  //Scroll automatiquement en haut de page au chargement
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  //N'affiche rien si mauvaise url
   if (!appartement) {
     return null;
   }
@@ -39,7 +50,9 @@ function AppartementDetail() {
           <p className="localisation">{appartement.location}</p>
           <div className="tags">
             {appartement.tags.map((tag, index) => (
-              <p className="tag" key={index}>{tag}</p>
+              <p className="tag" key={index}>
+                {tag}
+              </p>
             ))}
           </div>
         </div>
@@ -48,24 +61,28 @@ function AppartementDetail() {
             {[...Array(5)].map((_, i) => (
               <i
                 key={i}
-                className={`fa-solid fa-star star ${i < appartement.rating ? 'filled' : ''}`}
+                className={`fa-solid fa-star star ${
+                  i < appartement.rating ? "filled" : ""
+                }`}
               ></i>
             ))}
           </div>
           <div className="host">
             <p>{appartement.host.name}</p>
-            <img className="host-picture" src={appartement.host.picture} alt={appartement.host.name} />
+            <img
+              className="host-picture"
+              src={appartement.host.picture}
+              alt={appartement.host.name}
+            />
           </div>
         </div>
       </div>
       <div className="appartement-detail__info">
-        <CollapsibleSection 
-          title="Description" 
+        <CollapsibleSection
+          title="Description"
           content={appartement.description}
         />
-        <CollapsibleSection 
-          title="Équipements"
-        >
+        <CollapsibleSection title="Équipements">
           <ul>
             {appartement.equipments.map((equipment, index) => (
               <li key={index}>{equipment}</li>

@@ -1,28 +1,30 @@
+@import 'variables';
+@import 'mixins';
+
 .not-found {
-    &__404 {
-      font-size: 100px;
-      font-weight: 700;
-      margin: 50px 0;
-      text-align: center;
-      color: #FF6060;
-    }
-  
-    &__text {
-      color: #FF6060;
-      font-size: 36px;
-      font-weight: 500;
-      padding: 50px;
-      text-align: center;
-    }
-  
-    &__link {
-      display: inline-block;
-      text-align: center;
-      width: 100%;
-      font-size: 18px;
-      font-weight: 500;
-      text-decoration: underline;
-      margin-bottom: 80px;
-    }
+  &__404 {
+    font-size: 100px;
+    font-weight: 700;
+    margin: 50px 0;
+    text-align: center;
+    color: #FF6060;
   }
-  
+
+  &__text {
+    color: #FF6060;
+    font-size: 36px;
+    font-weight: 500;
+    padding: 50px;
+    text-align: center;
+  }
+
+  &__link {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: 80px;
+  }
+}
