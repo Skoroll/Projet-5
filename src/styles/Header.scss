@@ -23,6 +23,9 @@ header {
       margin: 0 0 0 15px;
 
       }
+      @media screen and (max-width: 370px) {
+        min-width: 100px;;  
+         }
   }
 
   nav {
@@ -35,6 +38,10 @@ header {
       display: flex;
       list-style: none;
       gap: 20px;
+
+      @media screen and (max-width: 370px) {
+       font-size: 15px;  
+        }
 
       li a {
         font-weight: 600;
