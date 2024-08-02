@@ -11,9 +11,11 @@ function Home() {
   }, []);
 
   // Mettre à jour le titre de la page
+  //L'id utilisé pour les cartes et celle fournie dans le JSON
   useEffect(() => {
     document.title = `Accueil - Kasa`;
   });
+
 
   return (
     <main>

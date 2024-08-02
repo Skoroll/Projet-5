@@ -1,8 +1,8 @@
-// src/components/Carrousel.jsx
 import React, { useState } from 'react';
 import '../styles/Carrousel.scss';
 
 function Carrousel({ pictures }) {
+
     const [current, setCurrent] = useState(0);
     const length = pictures.length;
 

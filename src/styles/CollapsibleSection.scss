@@ -11,7 +11,7 @@
     align-items: center;
     cursor: pointer;
     color: white;
-    background: #FF6060;
+    background: $red-color;
     padding: 10px;
     border-radius: 5px;
 
@@ -44,7 +44,7 @@
 
   &.open {
     .content {
-      max-height: 1000px; /* set a large value that exceeds the maximum height of the content */
+      max-height: 1000px;
       padding: 25px;
 
       ul {

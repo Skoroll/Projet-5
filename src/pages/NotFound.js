@@ -14,6 +14,7 @@ function NotFound() {
     document.title = `404 - Kasa`;
   });
 
+  //Page affichée lors de toutes mauvaise redirection/faute URL
   return (
     <main>
       <p className="not-found__404">404</p>

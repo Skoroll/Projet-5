@@ -8,11 +8,14 @@ import '../styles/Banner.scss';
 //Bannière en 2 version, cliff et mountain
 //cliff et mountain doit être spéficié lors de l'appel d'une bannière
 //autrement un message d'erreur sera renvoyé.
+//Laissé dans le code par sécurité.
 function Banner({ version }) {
   if (!version || (version !== 'cliff' && version !== 'mountain')) {
     return <div className='banner'><p>Erreur dans le choix de prop</p></div>;
   }
 
+
+  //Si version = "cliff" alors on utilise les donnés de cliffBanner, sinon c'est celle de mountainBanner
   const imageUrl = version === 'cliff' ? cliffBanner : mountainBanner;
   const showText = version === 'cliff';
 

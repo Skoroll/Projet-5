@@ -38,6 +38,7 @@ function About() {
     document.title = `A propos - Kasa `;
   });
 
+  //Continent la bannière en version "mountain" et les collapse correspondant au const=articles plus haut
   return (
     <main>
       <Banner version="mountain" />

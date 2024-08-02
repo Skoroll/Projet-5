@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import appartementsData from "../datas/appartements.json";
 import Carrousel from "../components/Carrousel";
 import CollapsibleSection from "../components/CollapsibleSection";
+import Loader from "../components/Loader";
 import "../styles/AppartementDetail.scss";
 
 function AppartementDetail() {
@@ -34,9 +35,9 @@ function AppartementDetail() {
     window.scrollTo(0, 0);
   }, []);
 
-  //N'affiche rien si mauvaise url
+  //Spinner affiché pendant le chargement de la page si nécessaire
   if (!appartement) {
-    return null;
+    return <Loader />;
   }
 
   return (

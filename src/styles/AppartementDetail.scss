@@ -9,7 +9,7 @@
   width: 100%;
 
   p {
-    background: #FF6060;
+    background: $red-color;
     color: $text-color;
     padding: 5px 10px;
     border-radius: 10px;
@@ -35,7 +35,7 @@
 }
 
 h1 {
-  color: #FF6060;
+  color: $red-color;
   margin: 0;
   font-weight: 500;
 }
@@ -45,7 +45,7 @@ h1 {
   flex-direction: row;
   align-items: baseline;
   color: $text-color;
-  background: #FF6060;
+  background: $red-color;
   padding: 5px;
   border-radius: 5px;
 
@@ -66,7 +66,7 @@ h1 {
     font-weight: 500;
     line-height: 25.67px;
     text-align: right;
-    color: #FF6060;
+    color: $red-color;
   }
 
   .host-picture {
@@ -102,12 +102,15 @@ h1 {
 .rating {
   display: flex;
   margin: 0;
+  margin-top: 10px;
 
   .star {
-    color: lightgray; /* Default color for stars */
+    color: lightgray; 
   }
 
   .star.filled {
-    color: red; /* Color for filled stars */
+    color: $red-color; 
   }
 }
+
+
