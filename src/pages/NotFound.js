@@ -22,7 +22,7 @@ function NotFound() {
         Oups! La page que vous demandez n'existe pas
       </p>
       <Link to="/home" className="not-found__link">
-        Retourner sur la page d’accueil
+        Retourner sur la page d'accueil
       </Link>
     </main>
   );

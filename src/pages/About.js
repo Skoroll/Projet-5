@@ -4,6 +4,8 @@ import Banner from "../components/Banner";
 import CollapsibleSection from "../components/CollapsibleSection";
 import { useEffect } from "react";
 
+
+//Les textes à afficher dans les collapses du "about"
 const articles = [
   {
     title: "Fiabilité",

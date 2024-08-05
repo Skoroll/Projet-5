@@ -5,15 +5,20 @@ function Carrousel({ pictures }) {
 
     const [current, setCurrent] = useState(0);
     const length = pictures.length;
-
+    
+    //Slide suivante
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
     };
 
+    //précédente
     const prevSlide = () => {
         setCurrent(current === 0 ? length - 1 : current - 1);
     };
 
+    // Les <i> sont les boutons gauche et droite, y sont attaché l'événement prev et nextSlide
+
+    //pictures.map récupère toutes les images à afficher dans le carrousel.
     return (
         <div className="carrousel">
             <i className="fa-solid fa-chevron-left left-arrow" onClick={prevSlide}></i>

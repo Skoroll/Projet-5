@@ -9,7 +9,7 @@ function Header() {
         <header>
             <NavLink
                 to="/home">
-                <Logo variant="red" />
+                <Logo version="red" />
             </NavLink>
             <nav>
                 <ul>

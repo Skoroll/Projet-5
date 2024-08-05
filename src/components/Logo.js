@@ -2,9 +2,9 @@ import logoRed from '../assets/logo_red.svg'
 import logoWhite from '../assets/logo_white.svg'
 
 
-function Logo({ variant }) {
-    let logoSrc = variant === "red" ? logoRed : logoWhite;
-    let altText = variant === "red" ? "Logo Red" : "Logo White";
+function Logo({ version }) {
+    let logoSrc = version === "red" ? logoRed : logoWhite;
+    let altText = version === "red" ? "Logo Kasa rouge" : "Logo Kasa blanc";
 
     return (
             <img className="header__logo" src={logoSrc} alt={altText} />
