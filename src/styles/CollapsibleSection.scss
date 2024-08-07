@@ -2,27 +2,25 @@
 @import 'mixins';
 
 .collapsible-section {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
 
   .section-heading {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     cursor: pointer;
-    color: white;
+    color: $text-color;
     background: $red-color;
     padding: 10px;
-    border-radius: 5px;
+    @include border-radius(5px);
 
     h2 {
       margin: 0;
-      font-size: 1rem;
+      @include font-size($font-size-small);
     }
 
     i {
-      font-size: 1.5rem;
-      transition: transform 0.3s ease;
+      @include font-size(1.5rem);
+      @include transition(transform);
       margin-right: 15px;
     }
   }
@@ -46,12 +44,6 @@
     .content {
       max-height: 1000px;
       padding: 25px;
-
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
     }
 
     .section-heading i {
@@ -72,7 +64,6 @@
   @media screen and (max-width: 735px) {
     flex-direction: column;
     gap: 0;
-    justify-content: left;
     .collapsible-section {
       width: 100%;
       padding-left: 0;

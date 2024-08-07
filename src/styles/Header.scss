@@ -3,7 +3,7 @@
 
 header {
   display: flex;
-  height: 100px;
+  height: $header-height;
   width: 100%;
   align-items: center;
   position: fixed;
@@ -11,21 +11,20 @@ header {
   top: 0;
   z-index: 999;
 
-
   .header__logo {
-    margin: 0 0 0 75px;
+    margin-left: 75px;
     width: 20vw;
     height: 90px;
     max-width: 210px;
     min-width: 125px;
 
     @media screen and (max-width: 768px) {
-      margin: 0 0 0 15px;
+      margin-left: 15px;
+    }
 
-      }
-      @media screen and (max-width: 370px) {
-        min-width: 100px;;  
-         }
+    @media screen and (max-width: 370px) {
+      min-width: 100px;
+    }
   }
 
   nav {
@@ -40,17 +39,17 @@ header {
       gap: 20px;
 
       @media screen and (max-width: 370px) {
-       font-size: 15px;  
-        }
+        @include font-size(15px);
+      }
 
       li a {
         font-weight: 600;
         color: black;
         text-decoration: none;
-      }
 
-      li a:hover {
-        text-decoration: underline;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
