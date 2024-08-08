@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 #root {
   margin: auto;
@@ -24,7 +24,6 @@ main {
 
   @media (max-width: 768px) {
     padding: 30px 0px;
-    margin:  55px 10px;
-
+    margin: 55px 10px;
   }
 }

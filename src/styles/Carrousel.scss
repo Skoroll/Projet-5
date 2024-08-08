@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 .carrousel {
   position: relative;
@@ -16,7 +16,8 @@
     border-radius: 15px;
   }
 
-  .left-arrow, .right-arrow {
+  .left-arrow,
+  .right-arrow {
     cursor: pointer;
     position: absolute;
     top: 50%;

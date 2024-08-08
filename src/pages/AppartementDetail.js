@@ -13,6 +13,7 @@ function AppartementDetail() {
 
   useEffect(() => {
     // Trouver l'appartement correspondant à l'id
+    //a pour "appartement"
     const foundAppartement = appartementsData.appartements.find(
       (a) => a.id === id
     );

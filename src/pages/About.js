@@ -4,7 +4,6 @@ import Banner from "../components/Banner";
 import CollapsibleSection from "../components/CollapsibleSection";
 import { useEffect } from "react";
 
-
 //Les textes à afficher dans les collapses du "about"
 const articles = [
   {
@@ -45,13 +44,13 @@ function About() {
     <main>
       <Banner version="mountain" />
       <div className="collapse-container">
-      {articles.map((article, index) => (
-        <CollapsibleSection
-          key={index}
-          title={article.title}
-          content={article.content}
-        />
-      ))}
+        {articles.map((article, index) => (
+          <CollapsibleSection
+            key={index}
+            title={article.title}
+            content={article.content}
+          />
+        ))}
       </div>
     </main>
   );

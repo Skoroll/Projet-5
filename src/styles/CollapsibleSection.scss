@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 .collapsible-section {
   margin: 0 0 20px;
@@ -30,7 +30,7 @@
     overflow: hidden;
     padding: 0 25px;
     font-size: 1rem;
-    background: #F6F6F673;
+    background: #f6f6f673;
     transition: max-height 0.3s ease, padding 0.3s ease;
 
     ul {

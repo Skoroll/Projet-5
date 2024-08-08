@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 .banner {
   position: relative;
@@ -40,7 +40,7 @@
     transform: translate(-50%, -50%);
     width: 95%;
     padding: 0;
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
     font-weight: 700;
     color: white;
     text-align: center;
@@ -50,7 +50,6 @@
 @media (max-width: 1375px) {
   .banner {
     height: 165px;
-
   }
 }
 @media (max-width: 768px) {
@@ -58,9 +57,8 @@
     height: 150px;
 
     &__text {
-      font-size: 2rem; 
+      font-size: 2rem;
       text-align: left;
     }
   }
 }
-

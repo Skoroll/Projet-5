@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 .tags {
   display: flex;
@@ -105,12 +105,10 @@ h1 {
   margin-top: 10px;
 
   .star {
-    color: lightgray; 
+    color: lightgray;
   }
 
   .star.filled {
-    color: $red-color; 
+    color: $red-color;
   }
 }
-
-

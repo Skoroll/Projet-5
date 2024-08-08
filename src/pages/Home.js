@@ -5,7 +5,6 @@ import appartementsData from "../datas/appartements.json";
 import AppartementCard from "../components/AppartementCard";
 import { useEffect } from "react";
 function Home() {
-  
   //Scroll automatiquement en haut de page au chargement
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -15,8 +14,7 @@ function Home() {
   useEffect(() => {
     document.title = `Accueil - Kasa`;
   });
-  
-  
+
   //L'id utilisé pour les cartes et celle fournie dans le JSON
   return (
     <main>
