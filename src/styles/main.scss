@@ -1,0 +1,20 @@
+// abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+
+
+// components
+@import 'components/banner';
+@import 'components/carrousel';
+@import 'components/collapsiblesection';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/loader';
+
+// pages
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/notfound';
+@import 'pages/appartementdetail';
+

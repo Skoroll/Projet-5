@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/CollapsibleSection.scss";
+import "../styles/components/CollapsibleSection.scss";
 
 function CollapsibleSection({ title, content, children }) {
   //UseState créant l'état "ouvert" et "fermé"

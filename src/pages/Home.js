@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Home.scss";
+import "../styles/pages/Home.scss";
 import Banner from "../components/Banner";
 import appartementsData from "../datas/appartements.json";
 import AppartementCard from "../components/AppartementCard";

@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
 
 .collapsible-section {
   margin: 0 0 20px;

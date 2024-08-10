@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
 
 .carrousel {
   position: relative;
@@ -52,6 +52,10 @@
     transform: translateX(-50%);
     color: white;
     font-weight: 600;
+
+    @media screen and (max-width: 768px){
+      display: none;
+    }
 
     p {
       margin: 0;

@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
 
 .not-found {
   &__404 {
@@ -16,6 +16,10 @@
     font-weight: 500;
     padding: 50px;
     text-align: center;
+
+    @media (max-width: 768px){
+      font-size: 20px;
+    }
   }
 
   &__link {

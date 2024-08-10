@@ -4,7 +4,8 @@ import appartementsData from "../datas/appartements.json";
 import Carrousel from "../components/Carrousel";
 import CollapsibleSection from "../components/CollapsibleSection";
 import Loader from "../components/Loader";
-import "../styles/AppartementDetail.scss";
+import "../styles/pages/AppartementDetail.scss";
+
 
 function AppartementDetail() {
   const { id } = useParams();

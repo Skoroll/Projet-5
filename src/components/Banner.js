@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import cliffBanner from "../assets/cliff-banner-cropped.webp";
 import mountainBanner from "../assets/mountain-banner-cropped.webp";
-import "../styles/Banner.scss";
+import "../styles/components/Banner.scss";
 
 //Bannière en 2 version, cliff et mountain
 //cliff et mountain doit être spéficié lors de l'appel d'une bannière

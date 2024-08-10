@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/NotFound.scss";
+import "../styles/pages/NotFound.scss";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 

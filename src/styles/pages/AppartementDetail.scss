@@ -1,5 +1,6 @@
-@import "variables";
-@import "mixins";
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
 
 .tags {
   display: flex;
